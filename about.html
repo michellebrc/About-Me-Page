@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- FontAwesome -->
+     <script src="https://kit.fontawesome.com/d9154953a4.js" crossorigin="anonymous"></script>
+     <!-- Font style -->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style/index.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="/style/animate.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>About Me</title>
+</head>
+<body>
+ <!-- Nav bar setup -->
+
+ <body data-spy="scroll" data-target=".navbar"></body>
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+
+<!-- Nav bar items -->
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item text-center">
+            <a class="nav-link active whiteNav" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item text-center">
+            <a class="nav-link whiteNav" href="about.html">About</a>
+        </li>
+        <li class="nav-item text-center">
+            <a class="nav-link disabled whiteNav" href="#project">Project</a>
+        </li>
+        <li class="nav-item text-center">
+            <a class="nav-link whiteNav" href="./contact.html">Contact</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<!-- Timeline -->
+<div class="timeline">
+    <h6>My Career Timeline</h6>  
+      <div class="timeline-container">
+        <div class="timeline-stop animate__animated animate__bounceIn" onclick="openTab('graduate')"></div>
+        <div class="timeline-road animate__animated animate__rotateInDownLeft animate__delay-1s"></div>
+        <div class="timeline-stop animate__animated animate__bounceIn animate__delay-1s" onclick="openTab('teacher')"></div>
+        <div class="timeline-road animate__animated animate__rotateInDownLeft animate__delay-2s"></div>
+        <div class="timeline-stop animate__animated animate__bounceIn animate__delay-2s" onclick="openTab('operation')"></div>
+        <div class="timeline-road animate__animated animate__rotateInDownLeft animate__delay-3s"></div>
+        <div class="timeline-stop animate__animated animate__bounceIn animate__delay-3s" onclick="openTab('coding')"></div>
+        <div class="timeline-road animate__animated animate__rotateInDownLeft animate__delay-4s"></div>
+        <div class="timeline-current animate__animated animate__bounceIn animate__delay-4s" onclick="openTab('xccelerate')""></div>
+        <div class="timeline-road animate__animated animate__rotateInDownLeft animate__delay-5s"></div>
+        <div class="timeline-stop animate__animated animate__bounceIn animate__delay-5s" onclick="openTab('system')""></div>
+        <div class="timeline-details" id="graduate" style="display: none">
+        <h3>Education</h3>
+        <br>
+        <p>Hong Kong Community College
+          <br>Associate Degree in Business Finance
+          <br>2018 – 2020</p>
+        </div>
+        <div class="timeline-details" id="teacher" style="display: none">        
+          <h3>Accounting Clerk</h3>
+          <br>
+          <p>My Accounting Duties are,
+            <br>Input accounting data into the accounting system
+            <br>Reconciling bank statement
+            <br>Follow up the business enquires from our customer</p></div>
+        <div class="timeline-details" id="operation" style="display: none">
+          <h3>Accounting system
+          </h3>
+          <br>
+          <p>My Accounting Duties requires a lot of system support
+          <br>We rely a lot on the accounting system to generate daily reports
+          <br>And there it makes me wonder how website actually operates</p>
+        </div>
+        <div class="timeline-details" id="coding" style="display: none">
+          <h3>Coding</h3>
+          <br>
+          <p>I first known coding was from a friend,
+          <br>He studies computer science and showed me his projects
+          <br>And I felt intereted in how coding can make a website from scratch</p>
+        </div>
+        <div class="timeline-details" id="xccelerate" style="display: none">
+          <h3>Coding Bootcamp</h3>
+          <br>
+          <p>Here I am. And you know what?</p>
+          <br>
+          <p id="codingJoke"></p>
+        </div>
+        <div class="timeline-details" id="system" style="display: none">
+          <h3>Goal</h3>
+          <br>
+          <p>To be a well-developed and skilled developer in the future
+            <br> Start my own project
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+        <div class="heading">
+            <h3>My Daily Life</h3>
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="./assets/image1.jpg" alt="">
+                <img src="./assets/image2.jpg" alt="">
+            </div>
+            <div class="dream">
+                <img src="./assets/image3.jpg" alt="">
+                <img src="./assets/image4.jpg" alt="">
+            </div>
+            <div class="dream">
+                <img src="./assets/image5.jpg" alt="">
+                <img src="./assets/image6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2022 Michelle Chow. All right reserved.</p>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="./style/index.js"></script>
+</body>
+</html>
